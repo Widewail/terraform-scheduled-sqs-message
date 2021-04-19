@@ -5,7 +5,7 @@ variable "name" {
 
 variable "queue_arn" { 
   type = string 
-  description = "Queue to receive the messages. If blank a new queue will be created."
+  description = "Queue to receive the messages."
 }
 
 variable "tags" {

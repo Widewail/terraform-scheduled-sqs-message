@@ -11,7 +11,7 @@ resource "aws_cloudwatch_event_target" "main" {
   input = var.input
 
   sqs_target {
-    message_group_id = var.command_name
+    message_group_id = var.name
   }
 }
 
