@@ -8,7 +8,7 @@ resource "aws_cloudwatch_event_rule" "main" {
 resource "aws_cloudwatch_event_target" "main" {
   rule  = aws_cloudwatch_event_rule.main.id
   arn   = var.queue_arn
-  input = var.input
+  input = var.payload
 
   sqs_target {
     message_group_id = var.name
